@@ -18,7 +18,7 @@ INSERT INTO Products
 VALUES
 	(1, 'Apple iPhone 12'),
 	(2, 'Зорич В.А. "Математический Анализ"'),
-  (3, 'Mitsubishi Outlander'),
+        (3, 'Mitsubishi Outlander'),
 	(4, '100 Rozes'),
 	(5, 'Toyota Supra'),
 	(6, 'Samsung Galaxy S20'),
@@ -59,16 +59,16 @@ CREATE TABLE ProductCategories (
 ``` SQL
 INSERT INTO ProductCategories
 VALUES
-	(1, 1),
-	(1, 4),
-	(2, 2),
-  (2, 4),
-  (3, 3),
-  (4, 4),
-  (5, 3),
-  (6, 1),
-  (6, 4),
-  (7, 4);
+      (1, 1),
+      (1, 4),
+      (2, 2),
+      (2, 4),
+      (3, 3),
+      (4, 4),
+      (5, 3),
+      (6, 1),
+      (6, 4),
+      (7, 4);
 ```
 
 И объединяем (само решение):
