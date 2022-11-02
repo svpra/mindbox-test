@@ -6,7 +6,6 @@ using System.Math;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace MindBoxLibrary
 {
@@ -26,23 +25,5 @@ namespace MindBoxLibrary
     public static class Prototype
     {
         public static double CalcSquare(Type type) => type.CalcSquare();    
-    }
-
-    // создаём класс Circlе
-    public class Circle : Type
-    {
-        public double Radius { get; set; }
-
-        // Создаём круг
-        public Circle(string FigureName, double Radius) : base(FigureName)
-        {
-            this.Radius = Radius;
-        }
-
-        // Считаем площадь
-        public override double CalcSquare()
-        {
-            return Math.Round(Math.PI * Math.Pow(Radius, 2), 1);
-        }
-    }   
+    } 
 }
