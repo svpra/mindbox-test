@@ -15,7 +15,15 @@ namespace MindBoxLibrary
         // Создаём круг
         public Circle(string FigureName, double Radius) : base(FigureName)
         {
-            this.Radius = Radius;
+            // Проверяем: отрицательный ли радиус
+            if (Radius < 0) 
+            {
+                throw new ArgumentException("Ошибка: значение стороны не может быть отрицательным");
+            }
+            else 
+            {
+                this.Radius = Radius;
+            }
         }
 
         // Считаем площадь
