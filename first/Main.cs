@@ -1,5 +1,5 @@
 /* Так как комментарии улучшают читаемость кода, а также это good practice, 
-всё в коде будет тчательно закомментировано :) */
+всё в коде будет тщательно закомментировано :) */
 
 using System;
 using System.Math;
@@ -39,8 +39,14 @@ namespace MindBoxLibrary
         // Создаём треугольник (и проверяем: является ли треугольником то, что пытается создать пользователь)
         public Triangle(string FigureName, double ab, double bc, double ac) : base(FigureName)
         {
-            if (ab < 0 or bc < 0 or ac < 0) throw new ArgumentException("Ошибка: значение стороны не может быть отрицательным");
-            else if (ab > (bc + ac) or bc > (ab + ac) or ac > (ab + bc)) throw new ArgumentException("Ошибка: Ваша сторона больше суммы двух других");
+            if (ab < 0 or bc < 0 or ac < 0) {
+                throw new ArgumentException("Ошибка: значение стороны не может быть отрицательным");
+            }
+            else if (ab > (bc + ac) or bc > (ab + ac) or ac > (ab + bc)) {
+            
+                throw new ArgumentException("Ошибка: Ваша сторона больше суммы двух других");
+                
+            }
             else
             {
                 this.ab = ab;
